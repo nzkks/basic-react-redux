@@ -27,4 +27,6 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   };
 };
 
+// export default connect(null, mapDispatchToProps)(ItemContainer); // In some scenarios, if just the mapDispatchToProps only needed, use null in place of mapStateToProps in connect HOC
+
 export default connect(mapStateToProps, mapDispatchToProps)(ItemContainer);
